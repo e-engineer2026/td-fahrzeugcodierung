@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: #f7fbff;
+  color: #0f172a;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-x {
+  @apply mx-auto w-full max-w-7xl px-5 sm:px-8;
+}
+
+.card {
+  @apply rounded-3xl border border-blue-100 bg-white shadow-sm;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center rounded-xl bg-blue-600 px-5 py-3 font-semibold text-white transition hover:bg-blue-700;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center rounded-xl border border-blue-200 bg-white px-5 py-3 font-semibold text-blue-700 transition hover:bg-blue-50;
+}
+
+input, select, textarea {
+  @apply w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-slate-900 outline-none transition;
+}
+
+input:focus, select:focus, textarea:focus {
+  @apply border-blue-500 ring-2 ring-blue-100;
+}
+
+.hero-grid {
+  background-image:
+    linear-gradient(rgba(37, 99, 235, .05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(37, 99, 235, .05) 1px, transparent 1px);
+  background-size: 38px 38px;
+}
