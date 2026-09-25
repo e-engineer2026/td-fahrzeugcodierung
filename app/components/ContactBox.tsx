@@ -14,7 +14,7 @@ export default function ContactBox() {
   const email = "elektronikermeister@gmail.com";
 
   const whatsappText = encodeURIComponent(
-    `Hallo, ich möchte eine Codierung vorprüfen lassen.\n\nName: ${name || "-"}\nFahrzeug: ${vehicle || "-"}\nBaujahr: ${year || "-"}\nCodierung: ${coding || "-"}`
+    `Hallo, ich möchte eine Codierung prüfen lassen.\n\nName: ${name || "-"}\nFahrzeug: ${vehicle || "-"}\nBaujahr: ${year || "-"}\nCodierung: ${coding || "-"}`
   );
 
   const mailSubject = encodeURIComponent("Anfrage zur Fahrzeugcodierung");
@@ -69,7 +69,7 @@ export default function ContactBox() {
       </div>
 
       <form onSubmit={submit} className="card p-7 sm:p-8">
-        <h3 className="text-2xl font-black">Codierung vorprüfen lassen</h3>
+        <h3 className="text-2xl font-black">Codierung prüfen lassen</h3>
         <p className="mt-3 text-sm leading-6 text-slate-600">
           Formular ausfüllen und Anfrage per E-Mail senden.
         </p>
